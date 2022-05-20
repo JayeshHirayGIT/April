@@ -1,0 +1,32 @@
+<p>fordirective works!</p>
+<!-- syntax=> *ngFor="let item of arrayName" -->
+<table>
+    <thead>
+        <th>Sr No</th>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of arrProduct;
+                    index as i"
+                    (mouseover)="onMouseOver(item)"
+                    (mouseout)="onMouseOut()"
+                    [ngClass]=" {
+                        'highlight':selected == item.name
+                    } ">
+            <td [ngClass]=" {
+                'highlight1':selected == item.name
+            } "> {{i+1}} </td>
+            <td [ngClass]=" {
+                'highlight2':selected == item.name
+            } "> {{item.name}} </td>
+            <td [ngClass]=" {
+                'highlight3':selected == item.name
+            } "> {{item.price}} </td>
+            <td [ngClass]=" {
+                'highlight4':selected == item.name
+            } "> {{item.quantity}} </td>
+        </tr>
+    </tbody>
+</table>

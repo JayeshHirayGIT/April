@@ -1,0 +1,21 @@
+<p>eventbinding1 works!</p>
+<!-- syntax=>(eventname)="MethodName()" -->
+<!-- <button (click)="onClick()">Click Event</button>
+<br><br>
+<img id="imgId" src="../../assets/emp.jpg" (click)="onImage()" alt="">
+ $event=>It is a special variable given by angular
+    it gives current DOM element information.it is object form
+    use when component interaction
+-->
+
+<!--<br>
+<hr>
+<button (click)="onEventUse($event)" value="Dollar Event Occur">Dollar event use</button>
+<br><hr> -->
+<input #inputname type="text" placeholder="Enter the Name">
+<br><br>
+<button (click)="onSend(inputname)">Send</button>
+<br><br>
+<input #inputname1 type="text" placeholder="Enter the Name">
+<br><br>
+<button (click)="onSend1(inputname1.value)">Send</button>

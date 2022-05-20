@@ -1,0 +1,5 @@
+<p>nana works!</p>
+
+<!-- <app-amit [nanaTOAmit]="strDAta"></app-amit> -->
+<app-amit (amitStrEvent)="strDataFromAmit=$event" ></app-amit>
+<h2> Data:: {{strDataFromAmit}}  </h2>

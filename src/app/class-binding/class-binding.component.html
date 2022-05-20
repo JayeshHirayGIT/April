@@ -1,0 +1,11 @@
+<p>class-binding works!</p>
+<!-- syntax=> [class]="PropertyName" -->
+<h2 [class]="myclass">Apply Class Binding Dynamically</h2>
+<h2 [class.danger]="rating<4"
+    [class.warning]="rating>4"
+>Apply Class Biniding On Condition</h2>
+<!-- ngClass=>we can set multiple css class,it takes to set a json object,
+     [ngClass]="jsonObject" -->
+<div [ngClass]="jsonObj">
+    Apply ngClass Binding on div 
+</div>

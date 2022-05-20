@@ -1,0 +1,24 @@
+table, th, td {
+    border: 1px solid;
+  }
+
+.highlight{
+    background-color: green;
+    color: white;
+}
+
+.highlight1{
+    background-color: gray;
+}
+
+.highlight2{
+    background-color: blue;
+}
+
+.highlight3{
+    background-color: green;
+}
+
+.highlight4{
+    background-color: orange;
+}

@@ -1,0 +1,13 @@
+<p>query-parameter works!</p>
+<a routerLink="">Home</a>
+<ul>
+    <li> Id :: {{myjson.myid}} </li>
+    <li> First Name :: {{myjson.myfname}} </li>
+    <li> Last Name :: {{myjson.mylname}} </li>
+</ul>
+<hr>
+
+<h2> {{message}} </h2>
+
+<input #msg type="text" placeholder="Enter the Message"><br><br>
+<button (click)="onCart(msg.value)">Add Cart</button>
