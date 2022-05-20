@@ -20,4 +20,5 @@ export class AmitComponent implements OnInit {
     this.amitStrEvent.emit(this.strData)
   }
 
+  
 }
